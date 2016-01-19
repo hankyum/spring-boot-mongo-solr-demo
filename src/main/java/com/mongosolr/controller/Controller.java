@@ -32,13 +32,13 @@ public class Controller {
     @RequestMapping(path = "clearAll", method = RequestMethod.GET)
     public String clearAll() {
         testDocumentService.clear();
-        return "Clear All Success";
+        return "Clear All Success!";
     }
 
     @RequestMapping(path = "indexMongo", method = RequestMethod.GET)
     public String indexMongo() {
         testDocumentService.indexMongo();
-        return "Index Mongo Success";
+        return "Index Mongo Success!";
     }
 
     @RequestMapping(path = "createDocument", method = RequestMethod.GET)
